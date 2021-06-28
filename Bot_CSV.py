@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[26]:
-
 
 import pyautogui # ferramenta de automaçao
 import pyperclip #permite copiar e colar
@@ -39,25 +34,10 @@ pyautogui.alert("Ok - processo finalizado...")
 # importando os dados agora, dados em excel
 
 
-
-
-
-
-
-
-
-# 4° abrir a pasta do google drive
-
-# 5° Baixar planilha de vendas
-
-
-# In[27]:
-
-
 import pandas as pd
 
 # Ler o arquivo xls
-df = pd.read_excel(r'C:\Users\usuario\Pictures\Videos Gislene\Saved Pictures\imagens\Downloads\vendas.xlsx') #r especifica para o python
+df = pd.read_excel(r'C:\Users\usuario\Pictures\Videos Gislene\Saved Pictures\imagens\Downloads\Vendas - Dez.xlsx') #r especifica para o python
 display(df) # printa a planilha mais correto 
 
 # calcular o faturamento das vendas
@@ -69,17 +49,6 @@ qtd_prod = df['Quantidade'].sum()
 print(f'O faturamento da empresa foi {faturamento}')
 print(f'Quantidade vendida foi de {qtd_prod}')
 
-
-
-
-
-
-# In[28]:
-
-
-import pyautogui # ferramenta de automaçao
-import pyperclip #permite copiar e colar
-import time # envolve tempo, tempo de espera, etc
 
 # Enviar o faturamento para o email do patrão 
 # 1° abrir o gmail
@@ -142,19 +111,6 @@ time.sleep(1)
 pyautogui.alert("E-mail enviado... ") 
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
